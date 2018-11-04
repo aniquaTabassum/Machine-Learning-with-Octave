@@ -1,0 +1,277 @@
+octave:1> p = -2 + randn(10);
+octave:2> hist(p)
+octave:3> pwd
+ans = C:\WINDOWS\system32
+octave:4> cd 'C:\Users\ang\Desktop'
+error: C:\Users\ang\Desktop: No such file or directory
+octave:4> cd 'C:'Users'
+parse error:
+
+  syntax error
+
+>>> cd 'C:'Users'
+                ^
+
+octave:4> cd 'C\Users\Desktop'
+error: C\Users\Desktop: No such file or directory
+octave:4> cd 'C:\Users\hp\Desktop'
+octave:5> pwd
+ans = C:\Users\hp\Desktop
+octave:6> ls
+ Volume in drive C is Windows
+ Volume Serial Number is 5C4F-EE70
+
+ Directory of C:\Users\hp\Desktop
+
+[.]
+[..]
+activity_sendorrecive_progressbar.xml
+Algorithm lab.pdf
+[AUST_CSE 2.2]
+connectify
+[Connectify-20180414T162739Z-001]
+credit operations.pdf
+emu8086.lnk
+Fin man mid 21st.zip
+[For Intra Aust]
+For_HSA.jar
+[GeeksForGeeks]
+GitHub Desktop.lnk
+graph.JPG
+[GraphOnline]
+[HackerEarth]
+[HackerRank]
+[HSA]
+hsa.JPG
+Jacobi.cpp
+jarFile.zip
+[JAVA]
+jdk-8u121-windows-x64.exe
+[Machine Learning]
+maix.png
+[MICROSOFT Office PRO Plus 2016 v16.0.4266.1003 RTM + Activator [TechTools.NET]]
+New Doc 2018-07-31.pdf
+NGPC.pdf
+quaJobSeq.txt
+seidel.cpp
+SendorreciveProgressbarActivity.java
+suggestions.txt
+Teamviewer.jar
+WhatsApp Image 2018-10-23 at 20.50.25(1).jpeg
+WhatsApp Image 2018-10-23 at 20.50.25(2).jpeg
+WhatsApp Image 2018-10-23 at 20.50.25(3).jpeg
+WhatsApp Image 2018-10-23 at 20.50.25.jpeg
+WhatsApp Image 2018-10-23 at 21.01.00.jpeg
+WhatsApp Image 2018-10-23 at 21.14.01.jpeg
+WhatsApp Image 2018-10-23 at 21.14.48.jpeg
+WhatsApp Image 2018-10-23 at 21.21.56.jpeg
+WPN-XM ServerControlPanel.lnk
+
+              30 File(s)    210,475,983 bytes
+              13 Dir(s)  798,079,057,920 bytes free
+octave:7> load pricey.dat
+error: load: unable to determine file format of 'pricey.dat'
+octave:7> pwd
+ans = C:\Users\hp\Desktop
+octave:8> lc
+error: 'lc' undefined near line 1 column 1
+octave:8> ls
+ Volume in drive C is Windows
+ Volume Serial Number is 5C4F-EE70
+
+ Directory of C:\Users\hp\Desktop
+
+[.]
+[..]
+activity_sendorrecive_progressbar.xml
+Algorithm lab.pdf
+[AUST_CSE 2.2]
+connectify
+[Connectify-20180414T162739Z-001]
+credit operations.pdf
+emu8086.lnk
+Fin man mid 21st.zip
+[For Intra Aust]
+For_HSA.jar
+[GeeksForGeeks]
+GitHub Desktop.lnk
+graph.JPG
+[GraphOnline]
+[HackerEarth]
+[HackerRank]
+[HSA]
+hsa.JPG
+Jacobi.cpp
+jarFile.zip
+[JAVA]
+jdk-8u121-windows-x64.exe
+[Machine Learning]
+maix.png
+[MICROSOFT Office PRO Plus 2016 v16.0.4266.1003 RTM + Activator [TechTools.NET]]
+New Doc 2018-07-31.pdf
+NGPC.pdf
+pricey.dat
+quaJobSeq.txt
+seidel.cpp
+SendorreciveProgressbarActivity.java
+suggestions.txt
+Teamviewer.jar
+WhatsApp Image 2018-10-23 at 20.50.25(1).jpeg
+WhatsApp Image 2018-10-23 at 20.50.25(2).jpeg
+WhatsApp Image 2018-10-23 at 20.50.25(3).jpeg
+WhatsApp Image 2018-10-23 at 20.50.25.jpeg
+WhatsApp Image 2018-10-23 at 21.01.00.jpeg
+WhatsApp Image 2018-10-23 at 21.14.01.jpeg
+WhatsApp Image 2018-10-23 at 21.14.48.jpeg
+WhatsApp Image 2018-10-23 at 21.21.56.jpeg
+WPN-XM ServerControlPanel.lnk
+
+              31 File(s)    210,487,760 bytes
+              13 Dir(s)  798,097,723,392 bytes free
+octave:9> load('pricey.dat')
+error: load: unable to determine file format of 'pricey.dat'
+octave:9> Load pricey.dat
+error: 'Load' undefined near line 1 column 1
+octave:9> s = 'hi'
+s = hi
+octave:10> save hello.txt s-ascii
+warning: save: no such variable 's-ascii'
+octave:11> save hello.txt s -ascii
+octave:12> s = 1
+s =  1
+octave:13> save hello.txt s -ascii
+octave:14> aMatrix = [1,2;3,4;5,6]
+aMatrix =
+
+   1   2
+   3   4
+   5   6
+
+octave:15> aMatrix(3,2)
+ans =  6
+octave:16> aMtatric(1:,)
+parse error:
+
+  syntax error
+
+>>> aMtatric(1:,)
+               ^
+
+octave:16> aMatrix(3,:)
+ans =
+
+   5   6
+
+octave:17> a(:,2) = (10;11;12)
+parse error:
+
+  syntax error
+
+>>> a(:,2) = (10;11;12)
+                ^
+
+octave:17> aMatrix(:,2) = [10;11;12]
+aMatrix =
+
+    1   10
+    3   11
+    5   12
+
+octave:18> aMatrix = [aMtrix,[200;300;400]]
+error: 'aMtrix' undefined near line 1 column 12
+octave:18> aMatrix = [aMatrix,[200;300;400]]
+aMatrix =
+
+     1    10   200
+     3    11   300
+     5    12   400
+
+octave:19> aMatrix = [500,600,700;aMatrix]
+aMatrix =
+
+   500   600   700
+     1    10   200
+     3    11   300
+     5    12   400
+
+octave:20> aMatrix = [aMatrix;500,600,700]
+aMatrix =
+
+   500   600   700
+     1    10   200
+     3    11   300
+     5    12   400
+   500   600   700
+
+octave:21> singleColumVectorForA = aMatrix(:)
+singleColumVectorForA =
+
+   500
+     1
+     3
+     5
+   500
+   600
+    10
+    11
+    12
+   600
+   700
+   200
+   300
+   400
+   700
+
+octave:22> %concat
+octave:22> bMatrix = [1,2,3;4,5,6;7,8,9;10,11,12]
+bMatrix =
+
+    1    2    3
+    4    5    6
+    7    8    9
+   10   11   12
+
+octave:23> cMatrix = [aMatrix bMarix]
+error: 'bMarix' undefined near line 1 column 20
+octave:23> cMatrix = [aMatrix bMatrix]
+error: horizontal dimensions mismatch (5x3 vs 4x3)
+octave:23> bMatrix = [bMatrix; 13,14,15]
+bMatrix =
+
+    1    2    3
+    4    5    6
+    7    8    9
+   10   11   12
+   13   14   15
+
+octave:24> cMatrix = [aMatrix bMatrix]
+cMatrix =
+
+   500   600   700     1     2     3
+     1    10   200     4     5     6
+     3    11   300     7     8     9
+     5    12   400    10    11    12
+   500   600   700    13    14    15
+
+octave:25> newC = [aMatrix; bMatrix]
+newC =
+
+   500   600   700
+     1    10   200
+     3    11   300
+     5    12   400
+   500   600   700
+     1     2     3
+     4     5     6
+     7     8     9
+    10    11    12
+    13    14    15
+
+octave:26> size(newC)
+ans =
+
+   10    3
+
+octave:27> length(newC)
+ans =  10
+octave:28>
